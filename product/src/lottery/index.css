@@ -16,6 +16,7 @@ a {
 
 .none {
   display: none;
+  animation: fadein 2s linear infinite;
 }
 
 #container {
@@ -24,6 +25,21 @@ a {
   margin: 0 15vh;
 }
 
+#text-container {
+  z-index: 3;
+  position: relative;
+  margin: 0 15vh;
+}
+
+
+
+.text-container-mess{
+  text-align: center;
+  color: #fff;
+  line-height: 5vh;
+  font-size: 5vh;
+  margin: 30vh 15vw;
+}
 #menu {
   z-index: 4;
   margin-left: 15vh;
@@ -568,5 +584,33 @@ button:active {
   100% {
     transform: scale(0.9);
     opacity: 0.8;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

@@ -46,9 +46,9 @@ module.exports = {
         // 压缩css
         minifyCSS: true,
         // 压缩JS
-        minifyJS: true,
+        // minifyJS: true,
         // 移除空格
-        collapseWhitespace: true
+        // collapseWhitespace: true
       },
       hash: true,
       inject: true

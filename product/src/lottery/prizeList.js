@@ -247,6 +247,8 @@ let setPrizeData = (function () {
     }
 
     if (currentPrizeIndex === 0) {
+      let currPrize = prizes[currentPrizeIndex];
+      console.log(`特别奖品`,currPrize)
       prizeElement.prizeType.textContent = "特别奖";
       prizeElement.prizeText.textContent = " ";
       prizeElement.prizeLeft.textContent = "不限制";
